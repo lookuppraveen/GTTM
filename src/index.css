@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #070022;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.font-comfortaa {
+  font-family: "Comfortaa", sans-serif;
+}
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+/* .myText:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 255, 119, 1) 30%,
+    rgba(31, 154, 179, 1) 100%
+  );
+  background-clip: text;
+  color: transparent;
+} */
+/* h1 {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 255, 119, 1) 30%,
+    rgba(31, 154, 179, 1) 100%
+  );
+  background-clip: text;
+  color: transparent;
+  font-size: small;
+} */
+
+h2 {
+  font-size: x-small;
+  font-weight: 500;
+}
+.fancy_border {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+.gradientbg {
+  background-image: url("./assets//images/koom.svg");
+  background-repeat: no-repeat no-repeat;
+  background-position: calc(100% - 10px) calc(100% - 100px);
+  background-size: contain;
+}
+
+/* .gradient-text {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 255, 119, 1) 30%,
+    rgba(31, 154, 179, 1) 100%
+  );
+  background-clip: text;
+  color: transparent;
+} */
+
+@media only screen and (max-width: 600px) {
+  .gradientbg {
+    background-image: url("./assets//images/koom.svg");
+    background-repeat: no-repeat no-repeat;
+    background-position: calc(100% - 100px) 0;
+    background-size: contain;
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: "Evermore";
+    src: url("/assets/fonts/Evermore.ttf") format("truetype");
+  }
+}
+
+@layer base {
+  h1,
+  h2 {
+    @apply font-heading;
+  }
+}
